@@ -1,0 +1,181 @@
+body {
+	margin: 0;
+	font-size: 18px;
+}
+.logo {
+	float: left;
+	margin-left: 10%;
+}
+
+.top_nav {
+	margin-left: 55%;
+}
+
+.top_nav a {
+	margin-left: 30px;
+}
+
+header {
+	padding: 20px 0 1px 0;
+	background-color: #FFFFFF;
+	margin: 0;
+}
+
+body {
+	background-color: rgb(243, 243, 243);
+}
+
+.main {
+	font-size: 18px;
+}
+
+.main, h2 {
+	font-size: 30px;
+}
+
+section {
+	padding: 20px 0 40px;
+	margin: 0;
+}
+
+.b-global-cities {
+	position: relative;
+	margin: 30px auto 53px;
+	padding: 30px 35px;
+	width: 935px;
+	min-height: 240px;
+	background: #fff;
+	border-radius: 4px;
+	box-shadow: 2.5px 4.33px 24px 0 #616161;
+}
+
+section.dark-gray {
+	background: #333;
+	color: #fff;
+	padding: 20px 0 30px;
+}
+
+.texts {
+	margin: 0 15% 0 15%;
+}
+
+#slogan {
+	padding: 15px 5% 0 5%;
+text-align: center;
+}
+
+.line {
+	height: 4px;
+	background: #333;
+	margin: 22px 0 -28px;
+}
+
+.center {
+	color: #4e4e4e;
+	font-size: 32px;
+	padding: 4px 0 14px 0;
+	text-align: center;
+}
+
+.date {
+	display: inline-block;
+	background: #FFFFFF;
+	color: #ec5322;
+	text-transform: uppercase;
+	font-size: 36px;
+	font-weight: 700;
+	padding: 0 20px;
+}
+
+.seminar {
+	text-align: center;
+}
+
+.title {
+	font-size: 38px;
+	padding: 4px 0 14px 0;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.submit {
+	margin: 10px;
+}
+
+.attention_text {
+	color: red;
+}
+
+.pp_text {
+	color: blue;
+}
+
+.col {
+	padding: 0 20px;
+}
+
+.what_get {
+	float: left;
+	padding-top: 150px;
+}
+.what_get.list {
+	padding-left: 40px;
+	padding-top: 130px;
+	font-weight: 700;
+}
+
+.main_text {
+	font-size: 24px;
+}
+
+.bio, .leading {
+	float: left
+}
+
+.bio {
+	width: 300px;
+	margin-left: 150px;
+}
+
+.main_man {
+	padding-top: 100px;
+}
+
+.photo {
+	float: left;
+	margin-left: 150px;
+	width: 250px;
+	height: 500px;
+	background-color: #FFFFFF;
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#partners {
+	background: #FFFFFF;
+}
+
+.partner {
+	line-height: 100px;
+}
+
+.partner_link {
+	margin-left: 40px;
+	text-decoration: none;
+}
+
+.partner_link:hover {
+	text-decoration: none;
+}
+
+.directions {
+	margin-top: 50px;
+}
+
+.invisible {
+	display: none;
+}
