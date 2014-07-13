@@ -180,3 +180,12 @@ text-align: center;
 .invisible {
 	display: none;
 }
+
+#pers, #control, #qual {
+	display: none;
+}
+
+#control, #strategy, #qual, #pers {
+	font-size: 12px;
+	font-family: Arial;
+}

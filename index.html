@@ -10,14 +10,23 @@
 	<link rel="stylesheet" href="style.css">
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript">
-		$(function(){
-   $('a[href^="#"]').click(function(){
-        var target = $(this).attr('href');
-        $('html, body').animate({scrollTop: $(target).offset().top}, 900);
-        return false; 
-   }); 
-});
-</script>
+	$(function(){
+	   $('a[href^="#"]:not(.tr)').click(function(){
+	        var target = $(this).attr('href');
+	        $('html, body').animate({scrollTop: $(target).offset().top}, 900);
+	        return false; 
+	   }); 
+	   $(".tr").click(function() {
+	   		$(".info").children().hide();
+	   		$(".tr").css("text-decoration", "none");
+	   		var item = $(this).attr("href");
+	   		$(this).css("text-decoration", "underline");
+	   		$(item).show();
+	   		$('html, body').animate({scrollTop: $($(this).attr('href')).offset().top}, 900);
+	   		return false;
+	   })
+	});
+	</script>
 </head>
 <body style="background-color: rgb(243, 243, 243);">
 <header>
@@ -128,12 +137,12 @@
 	</div>
 	<div class="directions row">
 	<div class="col-md-6 col">
-		<a href="#strategy">
+		<a href="#strategy" class="tr">
 			СТРАТЕГИЧЕСКИЙ, ОПЕРАЦИОННЫЙ МЕНЕДЖМЕНТ И УПРАВЛЕНИЕ ПРОЕКТАМИ
 		</a>
 	</div>
 	<div class="col-md-6 col">
-		<a href="#strategy">
+		<a href="#control" class="tr">
 			УПРАВЛЕНИЕ ПРОИЗВОДСТВОМ
 		</a>
 	</div>
@@ -146,12 +155,12 @@
 	</div>
 	<div class="text_item row">
 	<div class="col-md-6 col">
-		<a href="#strategy">
+		<a href="#qual" class="tr">
 			МЕНЕДЖМЕНТ КАЧЕСТВА
 		</a>
 	</div>
 	<div class="col-md-6 col">
-		<a href="#strategy">
+		<a href="#pers" class="tr">
 			МЕНЕДЖМЕНТ ПЕРСОНАЛА
 		</a>
 	</div>
@@ -162,7 +171,126 @@
 	<div class="row invisible">
 		<div class="col-md-12"></div>
 	</div>
-
+	<div class="info">
+		<div id="strategy">
+		<table>
+			<tr>
+				<th>Наименование программы
+				(кол-во ак/часов)
+				</th>
+				<th>Целевая аудитория</th>
+				<th>Специализация</th>	
+			</tr>
+			<tr>
+				<td>Семинар – тренинг  «Управление проектами»
+(с применением программного продукта MS Project)» (36 часов)
+</td>
+				<td>- Руководители среднего звена.
+- Менеджеры проектов.
+- Руководители предприятий малого и среднего бизнеса.
+</td>
+				<td>- Машиностроения (Автомобилестроение)
+- Предприятия малого и среднего бизнеса
+</td>
+			</tr>
+			<tr>
+				<td>Семинар – тренинг «Повышение эффективности бизнес-процессов и организационное развитие компании» (16 часов)</td>
+				<td>- Руководители среднего звена.
+- Руководители предприятий малого и среднего бизнеса.
+</td>
+				<td>- Машиностроение (Автомобилестроение)
+- Предприятия малого и среднего бизнеса
+</td>
+			</tr>
+			<tr>
+				<td>Модульная программа повышения квалификации  «Развитие управленческих компетенций руководителя структурного подразделения» (24 часа)</td>
+				<td>- Руководители среднего звена и менеджеры.</td>
+				<td>- Машиностроения (Автомобилестроение)
+- Предприятия малого и среднего бизнеса
+- Сфера банковских услуг
+</td>
+			</tr>
+			<tr>
+				<td>Семинар – тренинг «Управление рисками» на предприятии (24 часа)</td>
+				<td>- Руководители среднего звена и менеджеры.</td>
+				<td>- Машиностроения (Автомобилестроение)
+- Предприятия малого и среднего бизнеса
+s</td>
+			</tr>
+		</table>
+		</div>
+		<div id="control">
+		<table>
+			<tr>
+<td>Модульная программа повышения квалификации «Управление производством и запасами» (36 часов)</td>
+<td>
+<ul style="list-style-type: circle;">
+<li>Руководители среднего звена и менеджеры.</li>
+</ul>
+<ul style="list-style-type: circle;">
+<li>Инженерно-технические работники.</li>
+</ul>
+</td>
+<td>
+<ul style="list-style-type: circle;">
+<li>Машиностроение (Автомобилестроение)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Семинар - тренинг «Внедрение инструментов Lean Production (бережливое производство)» (36 часов)</td>
+<td>
+<ul style="list-style-type: circle;">
+<li>Инженерные специалисты.</li>
+<li>Руководители среднего звена.</li>
+<li>Проектные менеджеры.</li>
+</ul>
+</td>
+<td>
+<ul style="list-style-type: circle;">
+<li>Машиностроение (Автомобилестроение)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Семинар – тренинг «Повышение эффективности производственных процессов на основе Теории ограничения систем Э.Голдратта» (36 часов)</td>
+<td>
+<ul style="list-style-type: circle;">
+<li>Инженерные специалисты.</li>
+<li>Руководители среднего звена.</li>
+<li>Проектные менеджеры.</li>
+</ul>
+</td>
+<td>
+<ul style="list-style-type: circle;">
+<li>Машиностроение (Автомобилестроение)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Семинар – тренинг «Повышение эффективности эксплуатации оборудования на основе ТРМ» (16 часов)</td>
+<td>
+<ul style="list-style-type: circle;">
+<li>Инженерные специалисты.</li>
+<li>Руководители среднего звена.</li>
+<li>Проектные менеджеры.</li>
+</ul>
+</td>
+<td>
+<ul style="list-style-type: circle;">
+<li>Машиностроение (Автомобилестроение)</li>
+</ul>
+</td>
+</tr>
+		</table>
+		</div>
+		<div id="qual">
+		dadasdasda3
+		</div>
+		<div id="pers">
+		dadasdasda4
+		</div>
+	</div>
 </div>
 </section>
 <section id="partners" class="center">
