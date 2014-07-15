@@ -50,7 +50,7 @@ section {
 	box-shadow: 2.5px 4.33px 24px 0 #616161;
 }
 
-section.dark-gray {
+.dark-grey {
 	background: #333;
 	color: #fff;
 	padding: 20px 0 30px;
@@ -146,8 +146,9 @@ text-align: center;
 	float: left;
 	margin-left: 150px;
 	width: 250px;
-	height: 500px;
-	background-color: #FFFFFF;
+	height: 390px;
+	background: url('images/jm-4Ikn138k.jpg');
+	background-size: cover;
 }
 
 .center-block {
@@ -156,7 +157,7 @@ text-align: center;
   margin-right: auto;
 }
 
-#partners {
+#consulting {
 	background: #FFFFFF;
 }
 
@@ -188,4 +189,8 @@ text-align: center;
 #control, #strategy, #qual, #pers {
 	font-size: 12px;
 	font-family: Arial;
+}
+
+footer {
+	background-color: 
 }
